@@ -7,7 +7,7 @@ function PostCreate() {
   async function handleSubmit(e) {
     e.preventDefault();
     await axios.post(`http://localhost:4000/posts`, {
-      title,
+      title, 
     });
 
     setTitle("");
