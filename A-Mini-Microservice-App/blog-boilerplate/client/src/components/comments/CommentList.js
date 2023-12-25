@@ -1,17 +1,17 @@
-import { useEffect, useState } from "react";
-import axios  from 'axios';
+// import { useEffect, useState } from "react";
+// import axios  from 'axios';
 
-function CommentList({ postId }) {
-    const [comments, setComments] = useState([]);
+function CommentList({ comments }) {
+    // const [comments, setComments] = useState([]);
 
-    useEffect(() => {
-        async function fetchData(){
-            const res = await axios.get(`http://localhost:4001/posts/${postId}/comments`);
-            // console.log(res.data);
-            setComments(res.data); 
-        }
-        fetchData();
-    }, [postId]);
+    // useEffect(() => {
+    //     async function fetchData(){
+    //         const res = await axios.get(`http://localhost:4001/posts/${postId}/comments`);
+    //         // console.log(res.data);
+    //         setComments(res.data); 
+    //     }
+    //     fetchData();
+    // }, [postId]);
     return (
         <div>
             <ul>

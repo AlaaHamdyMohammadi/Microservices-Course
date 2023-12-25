@@ -34,5 +34,5 @@ app.post('/events', (req, res) => {
 
 const PORT = 4002;
 app.listen(PORT, () => {
-  console.log(`Listen on port: ${PORT}`);
+  console.log(`Query Service Listen on port: ${PORT}`);
 });
